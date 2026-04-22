@@ -13,6 +13,8 @@ Launch the interface to manage data:
 Run the PDF exporter:
 `uv run src/generator.py`
 
+Automation / Orchestration (in progress):
+`uv run prefect server start`
 
 ## SQL Table Schema
 Run this in the sqlite-web console:
