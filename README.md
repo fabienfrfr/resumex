@@ -14,7 +14,7 @@ Run the PDF exporter:
 `uv run src/generator.py`
 
 Automation / Orchestration (in progress):
-`uv run prefect server start`
+`uv run mage start resumex` (http://localhost:6789)
 
 ## SQL Table Schema
 Run this in the sqlite-web console:

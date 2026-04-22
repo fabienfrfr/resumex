@@ -44,13 +44,29 @@ Expert en IA avec un parcours hybride, alliant une solide base en physique à un
 
 ### Expériences professionnelles
 
-#### Capgemini - Hybrid Intelligence | 07/2025 - 03/2026
-**Rôle : Architecte Solution IA / Avant-vente**
+#### Capgemini - Hybrid Intelligence | 07/2024 - 04/2026
+**Rôle : Architecte IA / Lead Tech IA**
 
 **Mission stratégique :**
 Expertise en transformation digitale pour les comptes majeurs du secteur Aérospatial (Airbus, Liebherr, Safran). Rôle charnière entre la stratégie métier, la viabilité technique et la rentabilité financière des projets d’IA (cibles ~50k€).
 
 **Responsabilités & Impacts :**
+
+- Projet : Orchestration platform designed to centralize AI project management, automate ROI reporting, and ensure data sovereignty.
+
+- Projet : Impletation Roo-Code vLLM (démo) pour client en interne : Transforming raw client specifications into production-ready AI/Data solutions, powered by local LLMs.
+
+- Projet : ENTERPRISE KNOWLEDGE MANAGEMENT : Building blocks of a knowledge management system
+
+- Projet : Graph Factory : Industrialiser l'intelligence des données pour A. Helicopters
+
+- Projet : Accélération de la résolution "Safety Risk Identification" : Capitalisation et industrialisation par l'IA
+
+- Projet : Aircabin - Time Series
+
+- Projet : RechercheOpérationnal
+
+- Projet : ReportGen
 
 * **Cadrage & Stratégie d'Architecture :**
     * Traduction des problématiques opérationnelles en solutions techniques robustes, alliant données capteurs (Time-series) et bases de connaissances structurées (Graph DB).
