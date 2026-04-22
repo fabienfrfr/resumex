@@ -1,1 +1,11 @@
 uv.lock
+
+.venv/
+.pytest_cache/
+__pycache__/
+
+/flow/
+!/flow/pyproject.toml
+!/flow/uv.lock
+!/flow/pipelines/
+!/flow/transformers/
