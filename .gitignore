@@ -4,7 +4,7 @@ uv.lock
 .pytest_cache/
 __pycache__/
 
-/flow/
+/flow/*
 !/flow/pyproject.toml
 !/flow/uv.lock
 !/flow/pipelines/
