@@ -308,19 +308,40 @@ Tu as raison, reprenons cette fiche pour y intégrer les dimensions **Gouvernanc
 **Projet : ThermalTwin (2023)**
 
 * **Enjeu stratégique :** Optimiser l'efficacité énergétique des batteries de véhicules électriques par une régulation thermique haute précision, capable de s'adapter aux contraintes physiques en temps réel.
+Contraintes & Exigences : Sécurité déterministe (ISO 26262), latence critique < 10ms (temps réel strict), et souveraineté des données (zéro accès cloud externe sur la boucle de contrôle).
 * **Stratégie d'architecture :** Mise en place d'un système hybride couplant un solveur déterministe (**acados**) pour la fidélité physique du contrôle, et une architecture asynchrone (**MQTT**) pour garantir une latence minimale dans les boucles de rétroaction.
 * **Levier opérationnel :** Développement d'une chaîne de traitement robuste : interface bus CAN (**python-can**), optimisation numérique via **acados**, et structuration des flux haute performance (**FastAPI/Redis**) avec historisation locale optimisée (**DuckDB**).
 * **Impact :** Livraison d'un démonstrateur opérationnel validant la chaîne complète d'acquisition et de contrôle, prouvant la capacité du système à piloter dynamiquement les actionneurs de refroidissement en environnement contraint.
+
+Contraintes & Exigences : Sécurité (ISO 26262), latence < 10ms, souveraineté (0 cloud).
+
+Enjeu stratégique : Optimiser le refroidissement batterie VE par contrôle prédictif.
+
+Architecture & Arbitrage : Solveur déterministe (acados) pour la certifiabilité vs modèles "boîte noire" ; MQTT pour isoler les flux.
+
+Levier opérationnel : Stack robuste (python-can, FastAPI, DuckDB).
+
+Pérennité & Ops : Architecture conteneurisée et testée par simulation HIL, garantissant une intégration simplifiée dans les futurs modèles de véhicules.
+
+Impact : Démonstrateur certifiable, latence divisée par 3, passage en production validé.
 
 
 **Projet : TBMSmux (2022-2023)**
 
 * **Enjeu stratégique :** Concevoir une interface électronique robuste pour le pilotage d'actionneurs thermiques innovants, permettant l'intégration directe de modèles d'IA dans la chaîne de commande des batteries.
+Contraintes & Exigences : Interopérabilité entre calculs basse consommation (microcontrôleur) et calculs IA lourds (NPU), gestion de la puissance en milieu haute tension, et intégrité du bus de commande.
 * **Stratégie d'architecture :** Mise en œuvre d'un découplage strict entre la gestion temps réel des actionneurs (hard real-time) et l'unité de calcul accélérée (NPU) dédiée à l'inférence Deep Learning, garantissant une stabilité système maximale.
 * **Levier opérationnel :** Développement d'une architecture électronique hybride : pilotage PWM via microcontrôleur, étage de conversion de puissance, et interface de communication haute vitesse entre le bus de contrôle et le moteur d'inférence.
 * **Impact :** Réalisation physique d'un pont de commande (Hardware-in-the-Loop) reliant les actionneurs thermiques aux modèles d'IA, validant ainsi la viabilité de l'architecture de contrôle globale en conditions réelles.
 
 
+### La Chaîne de Décision (Le "Framework")
+
+1.  **Besoin :** Quel est le problème métier que je cherche à résoudre ? (Le *quoi*).
+2.  **Contrainte :** Quelles sont les limites du terrain ? (Normes, temps réel, budget, souveraineté).
+3.  **Risque :** Qu'est-ce qui va faire échouer le projet si je me trompe ? (Dette technique, non-conformité, point de défaillance unique).
+4.  **Arbitrage :** Quelle est la solution la plus simple qui répond aux contraintes tout en minimisant les risques ? (Le *moins pire* est souvent le meilleur : KISS, le *pourquoi*).
+5.  **Scalabilité (SOLID & TDD) :** Comment est-ce que je code pour que ça ne s'écroule pas quand on passera à l'échelle ou qu'on devra modifier une brique ? (Le *comment* propre).
 
 
 #### Capgemini - Hybrid Intelligence | 07/2024 - 04/2026
