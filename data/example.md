@@ -141,21 +141,6 @@ Architecte IA hybride expert des secteurs critiques (Aérospatial, Défense, Aut
 * **Impact :** Réduction du temps de traitement opérationnel par la génération automatisée de rapports structurés, permettant une exploitation de l'imagerie satellite par les opérateurs.
 
 
----
-
-### Capgemini Engineering (APA) | 09/2022 – 07/2024
-**Rôle : Responsable Projets - Ingénieur-chercheur DATA/IA**
-
-#### 1. Programme Futur of Mobility (Secteur Automobile)
-* **Enjeu :** Transition énergétique et gestion thermique des véhicules électriques.
-* **Apport Expert :** Pilotage de la roadmap via méthodes de conception système (TOGAF, IAF) et Business Model Canvas. Coordination multi-parties prenantes pour l'alignement des livrables.
-
-#### 2. Projet CANGPT & ThermalTwin : Diagnostic & Pilotage
-* **Enjeu :** Diagnostic de bus CAN et contrôle prédictif de refroidissement batterie.
-* **Arbitrage Architectural :** Utilisation de LLMs locaux (Ollama/Phi3) pour l'inférence sémantique de trames CAN, couplé à une optimisation de contrôle (solveur acados).
-* **Stack :** Python-CAN, MQTT, acados, DuckDB, FastAPI.
-
-
 
 #### Capgemini - Hybrid Intelligence | 07/2024 - 04/2026
 **Rôle : Architecte IA / Lead Tech IA**
@@ -217,6 +202,22 @@ Expertise en transformation digitale pour les comptes majeurs du secteur Aérosp
 * **Data Lineage & Versioning :** Traçabilité totale des datasets (DVC, LakeFS) pour garantir l'auditabilité et la reproductibilité des modèles.
 * **LLMOps & Sécurité :** Intégration de couches de *Guardrails* (NeMo, Guardrails AI) et observabilité en production (LangFuse, Arize) pour fiabiliser les agents.
 * **FinOps IA :** Optimisation des coûts de calcul et des ressources GPU (Kubernetes) via un suivi analytique du *Token Usage*.
+
+
+
+---
+
+### Capgemini Engineering (APA) | 09/2022 – 07/2024
+**Rôle : Responsable Projets - Ingénieur-chercheur DATA/IA**
+
+#### 1. Programme Futur of Mobility (Secteur Automobile)
+* **Enjeu :** Transition énergétique et gestion thermique des véhicules électriques.
+* **Apport Expert :** Pilotage de la roadmap via méthodes de conception système (TOGAF, IAF) et Business Model Canvas. Coordination multi-parties prenantes pour l'alignement des livrables.
+
+#### 2. Projet CANGPT & ThermalTwin : Diagnostic & Pilotage
+* **Enjeu :** Diagnostic de bus CAN et contrôle prédictif de refroidissement batterie.
+* **Arbitrage Architectural :** Utilisation de LLMs locaux (Ollama/Phi3) pour l'inférence sémantique de trames CAN, couplé à une optimisation de contrôle (solveur acados).
+* **Stack :** Python-CAN, MQTT, acados, DuckDB, FastAPI.
 
 
 ### Capgemini Engineering (APA) | 09/2022 – 07/2024
