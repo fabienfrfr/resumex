@@ -278,15 +278,15 @@ Piloter l'innovation sur des problématiques de gestion d'energie dans l'automob
 * **Valeur métier :** Déploiement d'analyses de valeur (VRIO, Business Model Canvas) pour prioriser les investissements R&D sur les briques à plus fort ROI.
 * **Impact :** Consolidation d'un portefeuille de projets cohérent et pilotage opérationnel des livrables, sécurisant la viabilité économique de la roadmap de propulsion.
 
-Tu as raison, reprenons cette fiche pour y intégrer les dimensions **Gouvernance, Finance, RH et Risques** que nous venons de définir. Voici comment faire passer le programme "Future of Mobility" du stade de "stratégie de R&D" à celui de **"pilotage de Direction Technique"** :
 
 ### **Programme : Future of Mobility (2022-2024) - Version Direction**
 
 * **Enjeu Stratégique :** Sécuriser la transition technologique vers l'électrique (échéance 2035) en pilotant la transformation des architectures de gestion énergétique et de *Powertrain*.
 * **Gouvernance & Risques :** Mise en œuvre de cadres de référence (TOGAF, IAF) pour orchestrer la conformité système, réduire le risque d'obsolescence technologique et garantir l'interopérabilité sur l'ensemble du cycle de vie produit.
-* **Scalabilité Humaine & Organisation :** Direction d'une équipe transverse (R&D, Ingénierie système, IA) ; structuration de la montée en compétences et des processus collaboratifs pour fluidifier le passage de l'innovation au déploiement industriel.
-* **ROI, Budget & P&L :** Optimisation du portefeuille de projets via des analyses de valeur (VRIO, Business Model Canvas) ; arbitrage des investissements R&D pour maximiser le retour sur investissement (ROI) et maîtriser le TCO (Total Cost of Ownership) de la roadmap de propulsion.
+* **Scalabilité Humaine & Organisation (management de proximité plutot ? leadership situationnel) :** Direction d'une équipe transverse (R&D, Ingénierie système, IA) ; structuration de la montée en compétences et des processus collaboratifs pour fluidifier le passage de l'innovation au déploiement industriel.
+* **ROI, Budget & P&L :** Optimisation du portefeuille de projets via des analyses de valeur (VRIO, Business Model Canvas) ; arbitrage des investissements R&D pour maximiser le retour sur investissement (ROI) et maîtriser le TCO (Total Cost of Ownership : hors sujet !) de la roadmap de propulsion.
 
+Scalabilité Humaine & Coaching : Direction d'une équipe transverse (6 pers.) ; mise en place de rituels agiles, mentorat technique, et structuration du partage de connaissances pour garantir l'autonomie des collaborateurs.
 
 **Projet : CANGPT (2023-2024)**
 
@@ -342,6 +342,14 @@ Contraintes & Exigences : Interopérabilité entre calculs basse consommation (m
 3.  **Risque :** Qu'est-ce qui va faire échouer le projet si je me trompe ? (Dette technique, non-conformité, point de défaillance unique).
 4.  **Arbitrage :** Quelle est la solution la plus simple qui répond aux contraintes tout en minimisant les risques ? (Le *moins pire* est souvent le meilleur : KISS, le *pourquoi*).
 5.  **Scalabilité (SOLID & TDD) :** Comment est-ce que je code pour que ça ne s'écroule pas quand on passera à l'échelle ou qu'on devra modifier une brique ? (Le *comment* propre).
+
+
+* **Enjeu :** [Le problème métier en une phrase.] + valeur ajouté ? ROI
+* **Contraintes & Exigences :** [Liste des 2-3 points critiques : normes, latence, souveraineté.]
+* **Stratégie & Arbitrage (Pourquoi) :** [Arbitrage choisi pour minimiser le risque de X et maximiser Y.] / architecture 
+* **Exécution & Qualité (Comment) :** [Approche technique : SOLID, TDD, KISS.] / + leadership
+* **Impact :** [Chiffres ou résultats concrets.]
+
 
 
 #### Capgemini - Hybrid Intelligence | 07/2024 - 04/2026
