@@ -1,4 +1,41 @@
-## **Framework de Pilotage Technique (Détaillé)**
+## **Préambule : Réforme du Dossier de Consultant**
+
+Les dossiers techniques classiques sont souvent "éxécution"-centrés et focalisés sur une accumulation de résultats disparates. Cette approche nuit à la lisibilité : le découpage mission par mission, étalé sur plusieurs pages, dilue l'expérience réelle du consultant et masque sa valeur ajoutée.
+
+Les clients n'attendent pas une liste exhaustive de *stacks* technologiques, mais une compréhension fine de votre **vision** et de votre **capacité d'arbitrage**. Ils veulent comprendre le "Pourquoi" (Enjeu), le "Comment" (Stratégie) et le "Quoi" (Résultat).
+
+### **Le nouveau modèle de pilotage technique**
+
+Pour répondre à cet impératif de séniorité, je propose un framework articulé autour de trois piliers :
+
+1.  **Synthèse des Compétences :** Mise en avant immédiate des années d'expérience consolidées par domaines (Technique, Organisationnel, Méthodologique).
+2.  **Expériences par Postes :** Regroupement des missions par fonctions principales pour illustrer la continuité du parcours et la montée en expertise.
+3.  **Logique de Valeur (Framework "Enjeu-Impact") :** Chaque expérience est présentée selon une structure narrative axée sur la résolution de problèmes complexes, plutôt que sur une simple énumération de tâches.
+
+Cette approche permet de transformer le CV technique en un **outil de pilotage stratégique**, où l'expertise est immédiatement lisible et la valeur ajoutée directement corrélée aux enjeux business du client.
+
+
+## **Framework de Pilotage Technique**
+
+### **Compétences Clés**
+
+#### **Techniques**
+* **Python :** 10+ ans (dont 5 en production via SOLID/TDD).
+* **Data Science :** 10+ ans (dont 4 en production industrielle sous contraintes ACID/MLOps).
+* **Computer Vision :** 5 ans (dont 3 en Deep Learning).
+* **NLP & IA Générative :** 5 ans (RAG, Fine-tuning, orchestration d'agents).
+
+#### **Organisationnel**
+* **Science & Recherche :** 5 ans (dont 3 en *Life Science*).
+* **Industrie & Défense :** 5 ans en contextes critiques et services.
+
+#### **Méthodologie**
+* **Management & Lead :** 4 ans (dont 3 en coaching et pilotage d'équipe).
+* **Architecture IA :** 3 ans (dont 2 via référentiels IAF/TOGAF).
+* **Cycles de vie :** 4 ans en environnements Agiles et Cycle en V.
+
+
+### Experiences
 
 #### 1. Enjeu (La Valeur)
 * **Contenu :** Définir le "Pain Point" métier. Ne pas lister de techno, mais un résultat.
@@ -11,13 +48,13 @@
 * **Format :** Paragraphe qui empêchent une solution "standard" du marché.
 
 #### 3. Stratégie & Arbitrage (La Décision)
-* **Contenu :** Le "Pourquoi" architectural. C'est ici que vous vendez votre expertise.
+* **Contenu :** Le "Pourquoi" architectural. C'est ici que vous vendez votre expertise et les méthodes (VRIO, TRL, IAF, etc.).
 * **Réflexion :** Pourquoi avoir choisi une approche déterministe plutôt qu'IA générative ? Pourquoi ce moteur de base de données (Graph vs SQL) ? Justifiez le compromis (ex: *« J'ai sacrifié la précision absolue pour garantir la certifiabilité ISO »*).
 * **Format :** *"Arbitrage pour [Atténuer Risque X] au profit de [Fiabilité Y] via [Architecture choisie]."*
 
 #### 4. Exécution & Qualité (La Réalisation)
 * **Contenu :** La rigueur de mise en œuvre.
-* **Réflexion :** Comment garantissez-vous que le code est maintenable et testable ? (Application des principes **SOLID** pour la scalabilité, **TDD** pour la non-régression, **KISS** pour réduire la dette technique).
+* **Réflexion :** Comment garantissez-vous que le code est maintenable et testable ? (Application des principes **SOLID** pour la scalabilité, **ACID** pour la validité, **TDD** pour la non-régression, **KISS** pour réduire la dette technique).
 * **Leadership :** Comment avez-vous embarqué l'équipe ? (Peer-programming, rituels agiles, montée en compétence, standardisation des assets).
 * **Format :** *"Approche : SOLID/TDD/KISS + Animation d'équipe par [Action managériale]."*
 
@@ -33,7 +70,7 @@
 
 ### **Projet : Pilotage de la Gouvernance IA (Capgemini, Architecte IA, 2025-2026)**
 
-* **Enjeu :** Industrialiser la gouvernance de projet (reporting, pilotage ROI) pour garantir la souveraineté des données et une visibilité transverse en environnement *On-premise*.
+* **Enjeu :** Industrialiser la gouvernance de projet (reporting, pilotage ROI) pour garantir la souveraineté des données et une visibilité transverse en environnement *On-premise* (Excel-free).
 * **Contraintes & Exigences :** Indépendance technologique vis-à-vis du Cloud, contraintes de sécurité liées à l'hébergement local, et besoin d'une intégration fluide des outils de BI.
 * **Stratégie & Arbitrage :** Choix d'une architecture conteneurisée légère. Arbitrage pour une stack technique "Small Data" (DuckDB, Datasette) privilégiant la sobriété et la maintenabilité à un Data Warehouse massif.
 * **Exécution & Qualité :** Automatisation des flux (Mage-ai) pilotée par des agents spécialisés (PydanticAI) pour l'analyse intelligente des KPIs. Mise en place de composants modulaires garantissant une évolutivité pérenne.
@@ -102,8 +139,8 @@
 
 * **Enjeu :** Sécuriser la transition technologique (échéance 2035) en orchestrant la transformation des architectures de gestion énergétique et de *Powertrain* intelligent.
 * **Contraintes & Exigences :** Alignement avec les standards industriels (ISO), nécessité de synchroniser des ruptures technologiques complexes avec les contraintes de *Time-to-Market* automobile.
-* **Stratégie & Arbitrage :** Mise en œuvre de cadres de référence (TOGAF, IAF) pour assurer la conformité système. Arbitrage pour une priorisation des investissements basée sur des analyses de valeur (VRIO, Business Model Canvas) afin de maximiser le retour sur investissement R&D (ROI/QCDP).
-* **Exécution & Qualité :** Pilotage d'une équipe transverse (R&D, Ingénierie système, IA) avec mise en place de rituels agiles, mentorat technique et structuration des processus collaboratifs pour fluidifier le passage de l'innovation au déploiement industriel.
+* **Stratégie & Arbitrage :** Mise en œuvre de cadres de référence (TOGAF, IAF) pour assurer la conformité système. Arbitrage pour une priorisation des investissements basée sur des analyses de valeur (VRIO, Business Model Canvas, TRL) afin de maximiser le retour sur investissement R&D (ROI/QCDP).
+* **Exécution & Qualité :** Pilotage d'une équipe transverse (R&D, Ingénierie système, IA) avec mise en place de rituels agiles, mentorat technique et structuration des processus collaboratifs pour fluidifier le passage de l'innovation au déploiement industriel (V-cycle ou Agile).
 * **Impact :** Consolidation d'un portefeuille de projets stratégiques cohérent, sécurisant la viabilité économique et technique de la roadmap de propulsion électrique.
 
 
