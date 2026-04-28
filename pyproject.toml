@@ -12,6 +12,7 @@ dependencies = [
     "streamlit-aggrid",
     "pyarrow",
     "pygwalker",
+    "pathspec>=1.1.1",
 ]
 
 [tool.uv.workspace]
