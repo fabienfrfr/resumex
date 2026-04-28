@@ -1,41 +1,23 @@
 # Resumex
-A lightweight CV generation engine.
+Lightweight CV engine using Streamlit, LanceDB, and DuckDB.
 
-## Setup
-1. **Initialize:** `uv venv` && `uv pip install -r pyproject.toml`
+## Quick Start
+1. **Initialize:** `uv sync`
+2. **Launch App:** `uv run streamlit run src/main.py`
 
-## Data Management (Datasette)
-Launch the interface to manage data:
-`uv run datasette data/resumex.db`
-*Access at http://localhost:8001*
+## Architecture
+- **Interface:** Streamlit + AgGrid (Manual entry)
+- **Data:** LanceDB (Local storage)
+- **Engine:** DuckDB (SQL analysis)
+- **Orchestration:** Mage.ai (Agent workflows)
 
-## Generation
-Run the PDF exporter:
-`uv run src/generator.py`
-
-Automation / Orchestration (in progress):
-`uv run mage start` (http://localhost:6789)
-
-## SQL Table Schema
-Run this in the sqlite-web console:
-```sql
-CREATE TABLE consultants (
-    id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL,
-    expertise TEXT,
-    bio TEXT
-);
-```
-
-## Project Structure
+## Project Structure (TODO)
 ```text
 resumex/
-├── data/
-│   └── resumex.db        # SQLite database
-├── src/
-│   ├── generator.py      # PDF generation script
-│   └── template.html     # Jinja2 branding template
-├── pyproject.toml        # uv configuration
-└── README.md
+├── app/          # Streamlit UI
+├── core/         # DB repository & logic
+├── data/         # LanceDB files
+├── flow/         # Mage.ai pipelines
+└── pyproject.toml
 ```
 
