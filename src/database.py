@@ -2,7 +2,7 @@ import lancedb
 import pandas as pd
 
 class DatabaseRepository:
-    def __init__(self, db_path="./ma_db", table_name="ma_table"):
+    def __init__(self, db_path="./data", table_name="table"):
         self.db = lancedb.connect(db_path)
         self.table_name = table_name
         self._ensure_table_exists()

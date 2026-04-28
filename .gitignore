@@ -9,3 +9,5 @@ __pycache__/
 !/flow/uv.lock
 !/flow/pipelines/
 !/flow/transformers/
+
+*.lance
