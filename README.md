@@ -1,5 +1,5 @@
 # Resumex
-Lightweight CV engine using Streamlit, LanceDB, and DuckDB.
+Lightweight CV engine using Streamlit, LanceDB, and DuckDB. (and FalkorDB for graph ?)
 
 ![banner](/banner.jpeg)
 
