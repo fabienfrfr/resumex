@@ -1,34 +1,53 @@
 import streamlit as st
 import duckdb
 from st_aggrid import AgGrid, GridOptionsBuilder
-import pygwalker as pyg
+from pygwalker.api.streamlit import StreamlitRenderer
 from database import DatabaseRepository
 
-st.set_page_config(layout="wide")
-st.title("🛠️ LanceDB + DuckDB Dashboard")
-
-# Initialize Repository
+st.set_page_config(
+    page_title="Resumex",
+    page_icon="🅾️",
+    layout="wide"
+)
 repo = DatabaseRepository()
+tables = ["consultants", "skills", "consultant_skills", "projects", "staffing"]
 
-# SQL Input
-sql_query = st.text_area("SQL Query", "SELECT * FROM df", height=100)
+with st.sidebar:
+    selected_table = st.selectbox("Sélectionner une table", tables)
 
-try:
-    # Load current data and execute SQL via DuckDB
-    df = repo.get_dataframe()
-    result_df = duckdb.query(sql_query).to_df()
+# Chargement
+df = repo.get_dataframe(selected_table)
+
+tab1, tab2 = st.tabs(["📊 Data Viewer", "📈 Visual Analytics"])
+
+with tab1:
+    st.subheader(f"Édition : {selected_table}")
     
-    st.subheader("Data Viewer")
-    grid = AgGrid(result_df, editable=True, fit_columns_on_grid_load=True)
+    # Configuration de la grille
+    gb = GridOptionsBuilder.from_dataframe(df)
+    gb.configure_default_column(editable=True)
+    grid_options = gb.build()
     
-    # Sync button
-    if st.button("Save Changes"):
-        repo.update_table(grid['data'])
-        st.success("Table updated successfully!")
+    # Rendu de la grille
+    grid_return = AgGrid(df, gridOptions=grid_options, reload_data=True)
+    
+    if st.button("Sauvegarder les modifications"):
+        repo.update_table(selected_table, grid_return['data'])
+        st.success("Données enregistrées !")
+        st.rerun()
+
+with tab2:
+    sql = st.text_area("Requête SQL", f"SELECT * FROM {selected_table}", height=100)
+    
+    try:
+        con = duckdb.connect()
+        for t in tables:
+            con.register(t, repo.get_dataframe(t))
+            
+        res = con.execute(sql).df()
         
-    # Visual Analytics
-    if st.button("Open Visual Analytics"):
-        pyg.walk(result_df)
-        
-except Exception as e:
-    st.error(f"SQL Error: {e}")
+        # Visualisation
+        renderer = StreamlitRenderer(res)
+        renderer.explorer()
+    except Exception as e:
+        st.error(f"SQL Error: {e}")

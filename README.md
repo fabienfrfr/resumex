@@ -1,6 +1,9 @@
 # Resumex
 Lightweight CV engine using Streamlit, LanceDB, and DuckDB.
 
+![banner](/banner.jpeg)
+
+
 ## Quick Start
 1. **Initialize:** `uv sync`
 2. **Launch App:** `uv run streamlit run src/main.py`
